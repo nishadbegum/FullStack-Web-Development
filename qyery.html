@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+
+	</title>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    .correct{
+    	color: yellow;
+    }
+    .wrong{
+    	color:red;
+    	background-color: pink;
+    }
+    .done{
+    	color: gray;
+    	text-decoration: line-through;
+    }
+
+
+  </style>
+</head>
+<body>
+<!--
+<div>Div 1 </div>
+<div class ="heighlight"> Div 2 </div>
+<div id = "third"> Div 3 </div>
+<div class="heighlight"> Div 4 </div>
+
+<script>
+$("div").css("background","purple");
+
+$(".heighlight").css("width","200px");
+$("#third").css("border", "1px solid orange");
+$("div:first").css("color","pink");
+</script> -->
+
+<input type="text" placeholder="your name">
+<h1> Hello there </h1>
+<ul>
+<li> Skittles </li>
+<li> Starburst </li>
+<li> Twix </li>
+<a href="google.com"> links </a>
+
+</ul>
+
+
+<input type="text">
+<script>
+
+$("h1").addClass("correct");
+$("li").first().toggleClass("done");
+
+// Click() method in jQuery 
+$("h1").click(function(){
+alert("hello there");
+});
+$("li").click(hey);
+
+function hey(){
+	$(this).css("background-color", "pink")
+}
+
+
+$("input").keypress(function(event){
+if(event.which === 13)
+{
+	alert("you hit enter");
+}
+});
+
+$("l1").on("mouseenter", function(){
+	$(this).css("font-weight", "bold");
+})
+</script>
+
+<!--Keypress() when a user press the key on keyboard-->
+<!-- Keyup and Keydown is also present-->
+<!-- Keypress event in order tp print when the enter key is present -->
+<!-- every key has a key code for enter it is 13 -->
+<!-- there is another method which is generrally used 
+which is "on" that is applicable to every element-->
+
+
+</body>
+</html>

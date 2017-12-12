@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style type="text/css">
+		
+		.purple{
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+<button> On click </button>
+</body>
+
+<script>
+
+var bu = document.querySelector("button");
+//var isPurple = false;
+
+/*bu.addEventListener("click", function(){
+	if(isPurple)
+	{
+document.body.style.background = "white";
+
+}
+else
+{
+	document.body.style.background = "purple";
+	
+}
+ isPurple = !isPurple;
+});*/
+
+bu.addEventListener("click", function(){
+document.body.classList.toggle("purple");
+
+	});
+
+
+</script>
+</html>

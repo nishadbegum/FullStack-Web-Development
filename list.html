@@ -1,0 +1,50 @@
+<html>
+<body>
+
+
+</body>
+
+
+<script>
+var todos = ["first"];
+var input = prompt("Enter what you wanna do");
+
+while(input !== "exit")
+{
+	if(input === "new"){
+	new1();
+}
+	else if(input === "display")
+	{
+		display();
+	}
+	else if(input === "delete")
+	{
+		deleteMe();
+	}
+	input = prompt("Enter what you wanna do");
+}
+
+function new1()
+{
+	var newtodo = prompt("enter the list");
+		todos.push(newtodo);
+}
+
+function display()
+{
+	todos.forEach(function(todo, i)
+	{
+
+		console.log(i + " " + todo);
+	});
+	
+}
+	
+	function deleteMe()
+	{
+		var ind = prompt("enter the index you wanna delete");
+		todos.splice(ind,1);
+	}
+</script>
+</html>
